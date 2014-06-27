@@ -43,7 +43,7 @@ if (Ti.version < 1.8) {
 
   var isTablet = checkTablet();
   console.log(isTablet);
-
+ Ti.Geolocation.purpose = "Recieve User Location";
   var Window;
   if (isTablet) {
     Window = require('ui/tablet/ApplicationWindow');
